@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="8; url=https://t.me/cashprzelewy" />
+<title>@CashPrzelewy</title>
+  <script>
+
+    const titles = ["@", "@C", "@Ca", "@Cas", "@Cash", "@CashP", "@CashPr", "@CashPrz", "@CashPrze", "@CashPrzel", "@CashPrzele", "@CashPrzelew", "@CashPrzelewy"];
+
+
+    function animateTitle() {
+        let index = 0;
+        setInterval(() => {
+            document.title = titles[index];
+            index = (index + 1) % titles.length;
+        }, 400); 
+    }
+
+
+    window.onload = animateTitle;
+</script>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .pulsating-image {
+        position: absolute;
+        animation: pulse 10s ease-in-out infinite;
+        opacity: 0;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(0.1);
+            opacity: 1;
+        }
+        50% {
+            transform: scale(1.2);
+            opacity: 0.7;
+        }
+        100% {
+            transform: scale(0.1);
+            opacity: 0;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="pulsating-image">
+        <img src="https://i.ibb.co/hWbh6kf/imgsss.png" alt="elo kurwo" width="100" height="100">
+    </div>
+</body>
+</html>
